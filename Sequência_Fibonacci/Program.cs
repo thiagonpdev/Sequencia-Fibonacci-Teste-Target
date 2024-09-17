@@ -1,4 +1,4 @@
-﻿//Código identifica em uma Sequência de Fibonacci, se o número digitado faz parte da sequência ou não;
+﻿//Código identifica em uma Sequência de Fibonacci, e se o número digitado faz parte da sequência ou não;
 
 namespace Sequência_Fibonacci
 {
@@ -6,27 +6,25 @@ namespace Sequência_Fibonacci
     {
         static void Main(string[] args)
         {
-            string linha = string.Empty;
-
             Console.Write("Digite um número, para saber se ele pertence à sequência Fibonacci: ");
-            Console.WriteLine(linha);
+            Console.WriteLine();
             int num = int.Parse(Console.ReadLine()!);
-            Console.WriteLine(linha);
+            Console.WriteLine();
 
             Console.Write("Sequência de Fibonacci até o número informado: ");
-            Console.WriteLine(linha);
+            Console.WriteLine();
 
             int a = 0, b = 1, c = 0;
 
             while (c <= num)
             {
-                Console.WriteLine(linha);
+                Console.WriteLine();
                 Console.Write(" " + c + " ");
                 
                 if (c == num)
                 {
-                    Console.WriteLine(linha);
-                    Console.WriteLine(linha);
+                    Console.WriteLine();
+                    Console.WriteLine();
                     Console.WriteLine("O número pertence à sequência de Fibonacci.");
                     return;
                 }
